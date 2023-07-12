@@ -1,0 +1,14 @@
+<mat-toolbar class="navbar">
+  <span>Tria Electrónica</span>
+  <button mat-icon-button [matMenuTriggerFor]="menu" (click)="openMenu()" *ngIf="isScreenSmall" class="menu-icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div class="menu-items" *ngIf="!isScreenSmall">
+    <a mat-button  [routerLink]="'/landing-component'">Inicio</a>
+    <a mat-button routerLink="/cart">Carrito</a>
+  </div>
+  <mat-menu #menu="matMenu" >
+    <button mat-menu-item routerLink="/">Inicio</button>
+    <button mat-menu-item routerLink="/cart">Carrito</button>
+  </mat-menu>
+</mat-toolbar>

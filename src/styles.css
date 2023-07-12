@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+/* Sobrescribe el color primario */
+
+/* Sobrescribe el color primario */
+.mat-primary {
+  color: #6587DF; /* Cambia #6587DF por el color que desees utilizar */
+}
+
+/* Sobrescribe el color primario en los elementos enfocados */
+.mat-focused .mat-primary {
+  background-color: #6587DF; /* Cambia #6587DF por el color que desees utilizar */
+}
+
+/* Sobrescribe el color primario en los elementos resaltados */
+.mat-accent .mat-primary {
+  background-color: #6587DF; /* Cambia #6587DF por el color que desees utilizar */
+}
+
+html, body { height: 100%; }
+body {
+  margin: 0; font-family: 'Poppins', sans-serif; padding-top: 64px;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ajusta el valor del índice z según tus necesidades */
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
+  background-color: #ffffff; /* Ajusta el color de fondo según tus necesidades */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajusta la sombra según tus necesidades */
+}
+
+
+.btn-primary{
+background-color: #6587DF;
+}
+

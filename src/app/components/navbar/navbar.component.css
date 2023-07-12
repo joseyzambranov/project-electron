@@ -1,0 +1,8 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidenav-container {
+  height: calc(100vh - 64px); /* Ajusta la altura según tus necesidades */
+}
