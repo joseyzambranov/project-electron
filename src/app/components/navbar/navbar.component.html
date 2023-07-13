@@ -4,11 +4,15 @@
     <mat-icon>menu</mat-icon>
   </button>
   <div class="menu-items" *ngIf="!isScreenSmall">
-    <a mat-button  [routerLink]="'/landing-component'">Inicio</a>
-    <a mat-button routerLink="/cart">Carrito</a>
+    <a mat-button  [routerLink]="'/'">Inicio</a>
+    <a mat-button  >Youtuber</a>
+    <a mat-button  >Blog</a>
+    <a mat-button [routerLink]="'/shop'">Tienda</a>
   </div>
   <mat-menu #menu="matMenu" >
-    <button mat-menu-item routerLink="/">Inicio</button>
-    <button mat-menu-item routerLink="/cart">Carrito</button>
+    <button mat-menu-item  [routerLink]="'/'">Inicio</button>
+    <button mat-menu-item  >Youtuber</button>
+    <button mat-menu-item  >Blog</button>
+    <button mat-menu-item [routerLink]="'/shop'">Tienda</button>
   </mat-menu>
 </mat-toolbar>

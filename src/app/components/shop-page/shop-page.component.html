@@ -1,0 +1,15 @@
+<div class="con mb-3 mt-3" class="home">
+  <div class="row g-0 " >
+
+    <div class="col home">
+      <div class="card-body ">
+        <h1 class="card-title home__text text-center" style="color: #6587DF;">Offering</h1>
+        <h5 class="card-title home__title text-center">Our amazing services</h5>
+        <div class="menu__container bd-grid">
+          <app-product *ngFor="let producto of productos" [producto]="producto" (agregarCarrito)="agregarProducto($event)"></app-product>
+        </div>
+        <app-cart-shop></app-cart-shop>
+  </div>
+</div>
+
+

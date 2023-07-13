@@ -12,12 +12,18 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
+import { ShopPageComponent } from './components/shop-page/shop-page.component';
+import { ProductComponent } from './components/product/product.component';
+import { CartShopComponent } from './components/cart-shop/cart-shop.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LangingPageComponent,
-    NavbarComponent
+    NavbarComponent,
+    ShopPageComponent,
+    ProductComponent,
+    CartShopComponent
   ],
   imports: [
     BrowserModule,
