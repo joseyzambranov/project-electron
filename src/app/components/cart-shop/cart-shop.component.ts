@@ -7,17 +7,23 @@ import { CartServiceService } from 'src/app/services/cart-service.service';
   styleUrls: ['./cart-shop.component.css']
 })
 export class CartShopComponent {
-  cartItems: any[] = [];
+  //cartItems: any[] = [];
 
   constructor(private cartService: CartServiceService) {
 
-    this.cartItems = this.cartService.getItems();
-  console.log("this.cartItems",this.cartItems)
+  //this.cartItems = this.cartService.getItems();
+  //console.log("this.cartItems",this.cartItems)
   }
   removeFromCart(product: any) {
     this.cartService.removeFromCart(product);
+    
   }
   get cartTotal(): number {
     return this.cartService.getTotal();
   }
+
+  get cartItems(): any[] {
+    return this.cartService.getItems();
+  }
+
 }

@@ -3,11 +3,15 @@
   <button mat-icon-button [matMenuTriggerFor]="menu" (click)="openMenu()" *ngIf="isScreenSmall" class="menu-icon">
     <mat-icon>menu</mat-icon>
   </button>
+
   <div class="menu-items" *ngIf="!isScreenSmall">
     <a mat-button  [routerLink]="'/'">Inicio</a>
     <a mat-button  >Youtuber</a>
     <a mat-button  >Blog</a>
     <a mat-button [routerLink]="'/shop'">Tienda</a>
+  </div>
+  <div class="demo-section">
+    <mat-icon matBadge= {{cartItemCount}}  matBadgeColor="warn" [routerLink]="'/cart'">shopping_cart</mat-icon>
   </div>
   <mat-menu #menu="matMenu" >
     <button mat-menu-item  [routerLink]="'/'">Inicio</button>

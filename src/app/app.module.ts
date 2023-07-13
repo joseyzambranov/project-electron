@@ -16,6 +16,8 @@ import { ShopPageComponent } from './components/shop-page/shop-page.component';
 import { ProductComponent } from './components/product/product.component';
 import { CartShopComponent } from './components/cart-shop/cart-shop.component';
 
+import {MatBadgeModule} from '@angular/material/badge';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +36,8 @@ import { CartShopComponent } from './components/cart-shop/cart-shop.component';
     MatIconModule,
     MatSidenavModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    MatBadgeModule
 
   ],
   providers: [],
