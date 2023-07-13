@@ -38,4 +38,7 @@ body {
 .btn-primary{
 background-color: #6587DF;
 }
-
+.mat-badge-content {
+  background: #6587DF;
+  color: #ffffff;
+}

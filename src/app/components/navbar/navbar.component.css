@@ -6,3 +6,8 @@
 .sidenav-container {
   height: calc(100vh - 64px); /* Ajusta la altura según tus necesidades */
 }
+
+.mat-badge-content {
+  background: red !important;
+  color: blue !important;
+}

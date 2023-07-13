@@ -11,6 +11,7 @@ import { CartServiceService } from 'src/app/services/cart-service.service';
 })
 export class NavbarComponent {
   isScreenSmall: boolean | undefined;
+  items: any[] | undefined;
   //cartItemCount: number = 0;
 
   constructor(private breakpointObserver: BreakpointObserver,private cartService: CartServiceService) {
@@ -22,7 +23,8 @@ export class NavbarComponent {
   }
 
   get cartItemCount(): number {
-    return this.cartService.getItems().length;
+    this.items = this.cartService.getItems();
+  return this.items.reduce((total, item) => total + item.quantity, 0);
   }
 
   hidden = false;
