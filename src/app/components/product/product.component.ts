@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product',
@@ -8,10 +9,13 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class ProductComponent {
   @Input() producto: any;
   @Output() agregarCarrito = new EventEmitter<any>();
+  constructor(private router: Router) {}
+  
 
   addToCart(): void {
-    this.agregarCarrito.emit(this.producto);
-    console.log('Producto agregado al carrito desde app-product:', this.producto);
+    const productId = this.producto.id;
+    this.router.navigate(['/product', productId]);
+    //this.agregarCarrito.emit(this.producto);
   }
 
 }
