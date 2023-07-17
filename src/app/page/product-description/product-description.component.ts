@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CartServiceService } from 'src/app/services/cart-service.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-product-description',
@@ -13,7 +14,8 @@ export class ProductDescriptionComponent {
 
   constructor(
     private route: ActivatedRoute,
-    private productService: CartServiceService
+    private productService: CartServiceService,
+    private toastr: ToastrService,
   ) {}
 
   ngOnInit() {
@@ -21,5 +23,10 @@ export class ProductDescriptionComponent {
       this.productId = +params['id'];
       this.product = this.productService.getProductById(this.productId);
     });
+  }
+
+  addToCart(): void {
+    this.productService.addToCart(this.product)
+    this.toastr.success('Se agrego un producto a tu carrito', 'Éxito');
   }
 }

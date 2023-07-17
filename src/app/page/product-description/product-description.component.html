@@ -1,14 +1,19 @@
-<div class="card mb-3" >
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="assets/img/plate1 2.png" class="img-fluid rounded-start" alt="...">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">{{ product.nombre }}</h5>
-          <p class="card-text">{{ product.descripcion }}</p>
-          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+<div class="con mb-6 mt-3" class="home">
+    <div class="card mb-3" >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="assets/img/book3.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h4>{{ product.nombre }}</h4>
+              <p class="card-text">{{ product.descripcion }}</p>
+              <p class="card-text">$ {{product.precio}}</p>
+                <a (click)="addToCart()" class="btn btn-primary m-1">agregar al carrito</a>
+                <a [routerLink]="'/shop'" class="btn btn-light m-1">volver</a>
+            </div>
+          </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
+  

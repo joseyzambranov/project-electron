@@ -18,6 +18,7 @@ import { CartShopComponent } from './components/cart-shop/cart-shop.component';
 
 import {MatBadgeModule} from '@angular/material/badge';
 import { ProductDescriptionComponent } from './page/product-description/product-description.component';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ProductDescriptionComponent } from './page/product-description/product-
     MatSidenavModule,
     MatMenuModule,
     MatButtonModule,
-    MatBadgeModule
+    MatBadgeModule,
+    ToastrModule.forRoot()
 
   ],
   providers: [],

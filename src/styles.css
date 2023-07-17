@@ -1,5 +1,6 @@
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
+
 /* Sobrescribe el color primario */
 
 /* Sobrescribe el color primario */
@@ -41,4 +42,8 @@ background-color: #6587DF;
 .mat-badge-content {
   background: #6587DF;
   color: #ffffff;
+}
+
+.home{
+  padding: 2.5rem 0 2rem;
 }

@@ -8,10 +8,10 @@ export class CartServiceService {
   items: any[] = [];
 
   products = [
-    { id: 1, nombre: 'Producto 1', precio: 10, descripcion: 'Descripción del producto 1' },
-    { id: 2, nombre: 'Producto 2', precio: 20, descripcion: 'Descripción del producto 2' },
-    { id: 3, nombre: 'Producto 3', precio: 30, descripcion: 'Descripción del producto 3' },
-    { id: 4, nombre: 'Producto 4', precio: 40, descripcion: 'Descripción del producto 4' }
+    { id: 1, nombre: 'Producto 1', precio: 10, descripcion: 'Descripción del producto 1  Sumérgete en nuestro canal de YouTube, donde encontrarás tutoriales en video, demostraciones prácticas y consejos para ampliar tus conocimientos y mejorar tus habilidades en electrónica.' },
+    { id: 2, nombre: 'Producto 2', precio: 20, descripcion: 'Descripción del producto 2  Sumérgete en nuestro canal de YouTube, donde encontrarás tutoriales en video, demostraciones prácticas y consejos para ampliar tus conocimientos y mejorar tus habilidades en electrónica.' },
+    { id: 3, nombre: 'Producto 3', precio: 30, descripcion: 'Descripción del producto 3  Sumérgete en nuestro canal de YouTube, donde encontrarás tutoriales en video, demostraciones prácticas y consejos para ampliar tus conocimientos y mejorar tus habilidades en electrónica.' },
+    { id: 4, nombre: 'Producto 4', precio: 40, descripcion: 'Descripción del producto 4  Sumérgete en nuestro canal de YouTube, donde encontrarás tutoriales en video, demostraciones prácticas y consejos para ampliar tus conocimientos y mejorar tus habilidades en electrónica.' }
   ];
 
   addToCart(product: any) {
